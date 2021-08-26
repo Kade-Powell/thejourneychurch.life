@@ -38,6 +38,7 @@ const Layout = ({ children }) => {
                 />
               </Navbar.Brand>
             </Col>
+            <Col></Col>
 
             <Col fluid={true}>
               <Row className="text-end">
