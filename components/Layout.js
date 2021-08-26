@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <Navbar className="sticky-top" bg="light" expand="lg">
         <Container fluid>
           <Row style={{ width: "100%" }}>
-            <Col>
+            <Col fluid={true}>
               <Navbar.Brand>
                 <img
                   src="/logo.png"
@@ -38,59 +38,52 @@ const Layout = ({ children }) => {
                 />
               </Navbar.Brand>
             </Col>
-            <Col>{/*for spacing*/}</Col>
 
-            <Col>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="text-end">
-                  <Nav.Link>
-                    <Link href="/">
-                      <div>
-                        <HouseDoor />
-                        home
-                      </div>
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link href="/about">
-                      <div>
-                        <InfoCircle />
-                        about
-                      </div>
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link href="/events">
-                      <div>
-                        <CalendarEvent />
-                        events
-                      </div>
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link href="/sermons">
-                      <div>
-                        <PlayBtn />
-                        sermons
-                      </div>
-                    </Link>
-                  </Nav.Link>
-                  <NavDropdown title="Dropdown" id="nav-dropdown">
-                    <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.2">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.3">
-                      Something else here
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item eventKey="4.4">
-                      Separated link
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-              </Navbar.Collapse>
+            <Col fluid={true}>
+              <Row className="text-end">
+                <Col>
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                </Col>
+              </Row>
+
+              <Row>
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav>
+                    <Nav.Link>
+                      <Link href="/">
+                        <Col>
+                          <HouseDoor />
+                          home
+                        </Col>
+                      </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <Link href="/about">
+                        <Col>
+                          <InfoCircle />
+                          about
+                        </Col>
+                      </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <Link href="/events">
+                        <Col>
+                          <CalendarEvent />
+                          events
+                        </Col>
+                      </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <Link href="/sermons">
+                        <Col>
+                          <PlayBtn />
+                          sermons
+                        </Col>
+                      </Link>
+                    </Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Row>
             </Col>
           </Row>
         </Container>
