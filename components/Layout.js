@@ -33,12 +33,12 @@ const Layout = ({ children }) => {
                   src="/logo.png"
                   alt="The Journey Church"
                   style={{
-                    width: "11rem",
+                    width: "13rem",
                   }}
                 />
               </Navbar.Brand>
             </Col>
-            <Col></Col>
+            <Col>{/*for spacing*/}</Col>
 
             <Col fluid={true}>
               <Row className="text-end">
@@ -75,10 +75,10 @@ const Layout = ({ children }) => {
                       </Link>
                     </Nav.Link>
                     <Nav.Link>
-                      <Link href="/sermons">
+                      <Link href="/watch">
                         <Col>
                           <PlayBtn />
-                          sermons
+                          watch
                         </Col>
                       </Link>
                     </Nav.Link>
@@ -89,9 +89,7 @@ const Layout = ({ children }) => {
           </Row>
         </Container>
       </Navbar>
-      <Container fluid className="bg-dark text-light">
-        {children}
-      </Container>
+      <Container fluid>{children}</Container>
     </Fragment>
   );
 };

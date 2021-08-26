@@ -16,7 +16,7 @@
   --bs-gray-dark: #282a36;
   --bs-primary: #bd93f9;
   --bs-secondary: #6272a4;
-  --bs-success: #50fa7b;
+  --bs-success: #34b74f;
   --bs-info: #8be9fd;
   --bs-warning: #ffb86c;
   --bs-danger: #ff5555;
@@ -26,15 +26,3 @@
 
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
-
-body {
-  background: $dark;
-}
-
-.navbar {
-  padding: 5px;
-}
-
-.stick-right {
-  margin-right: 0px;
-}
