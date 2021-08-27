@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 import Container from "react-bootstrap/Container";
@@ -7,7 +8,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
+import logo from "../public/logo.png";
 
 import {
   CalendarEvent,
@@ -25,22 +27,16 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar className="sticky-top" bg="light" expand="lg">
-        <Container fluid>
+        <Container fluid="true">
           <Row style={{ width: "100%" }}>
-            <Col fluid={true}>
+            <Col>
               <Navbar.Brand>
-                <img
-                  src="/logo.png"
-                  alt="The Journey Church"
-                  style={{
-                    width: "13rem",
-                  }}
-                />
+                <Image src={logo} alt="The Journey Church" />
               </Navbar.Brand>
             </Col>
             <Col>{/*for spacing*/}</Col>
 
-            <Col fluid={true}>
+            <Col>
               <Row className="text-end">
                 <Col>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -89,7 +85,7 @@ const Layout = ({ children }) => {
           </Row>
         </Container>
       </Navbar>
-      <Container fluid>{children}</Container>
+      <Container fluid="true">{children}</Container>
     </Fragment>
   );
 };
