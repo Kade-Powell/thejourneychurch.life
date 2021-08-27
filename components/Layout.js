@@ -17,6 +17,7 @@ import {
   Facebook,
   HouseDoor,
   InfoCircle,
+  Newspaper,
   PlayBtn,
 } from "react-bootstrap-icons";
 
@@ -100,6 +101,18 @@ const Layout = ({ children }) => {
                         >
                           <PlayBtn />
                           watch
+                        </a>
+                      </Link>
+                      <Link href="/news" className="nav-item nav-link">
+                        <a
+                          className={
+                            router.pathname == "/news"
+                              ? "nav-item nav-link  text-success "
+                              : "nav-item nav-link"
+                          }
+                        >
+                          <Newspaper />
+                          news
                         </a>
                       </Link>
                     </Nav>

@@ -26,7 +26,7 @@ export default function Home() {
       <Row>
         <Col>
           <Carousel>
-            <Carousel.Item>
+            <Carousel.Item interval={1700}>
               <Image
                 className="d-block w-100"
                 src={firstSlide}
@@ -34,7 +34,7 @@ export default function Home() {
                 layout="responsive"
               />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={1700}>
               <Image
                 className="d-block w-100"
                 src={secondSlide}
@@ -42,7 +42,7 @@ export default function Home() {
                 layout="responsive"
               />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={1700}>
               <Image
                 className="d-block w-100"
                 src={thirdSlide}
@@ -202,7 +202,8 @@ export default function Home() {
           <Card>
             <Card.Header>
               <h3 className="text-center">
-                What's Available For My Kids? <People className="text-info" />
+                What&#39;s Available For My Kids?
+                <People className="text-info" />
               </h3>
             </Card.Header>
             <Card.Body>
