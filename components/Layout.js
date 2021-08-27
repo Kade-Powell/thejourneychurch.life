@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -19,6 +20,8 @@ import {
 } from "react-bootstrap-icons";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
+
   return (
     <Fragment>
       <Head>
@@ -44,42 +47,62 @@ const Layout = ({ children }) => {
               </Row>
 
               <Row>
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav>
-                    <Nav.Link>
+                <Col>
+                  <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav>
                       <Link href="/">
-                        <Col>
+                        <a
+                          className={
+                            router.pathname == "/"
+                              ? "nav-item nav-link  text-success"
+                              : "nav-item nav-link"
+                          }
+                        >
                           <HouseDoor />
                           home
-                        </Col>
+                        </a>
                       </Link>
-                    </Nav.Link>
-                    <Nav.Link>
-                      <Link href="/about">
-                        <Col>
+
+                      <Link href="/about" className="nav-item nav-link">
+                        <a
+                          className={
+                            router.pathname == "/about"
+                              ? "nav-item nav-link  text-success"
+                              : "nav-item nav-link"
+                          }
+                        >
                           <InfoCircle />
                           about
-                        </Col>
+                        </a>
                       </Link>
-                    </Nav.Link>
-                    <Nav.Link>
-                      <Link href="/events">
-                        <Col>
+
+                      <Link href="/events" className="nav-item nav-link">
+                        <a
+                          className={
+                            router.pathname == "/events"
+                              ? "nav-item nav-link  text-success"
+                              : "nav-item nav-link"
+                          }
+                        >
                           <CalendarEvent />
                           events
-                        </Col>
+                        </a>
                       </Link>
-                    </Nav.Link>
-                    <Nav.Link>
-                      <Link href="/watch">
-                        <Col>
+                      <Link href="/watch" className="nav-item nav-link">
+                        <a
+                          className={
+                            router.pathname == "/watch"
+                              ? "nav-item nav-link  text-success "
+                              : "nav-item nav-link"
+                          }
+                        >
                           <PlayBtn />
                           watch
-                        </Col>
+                        </a>
                       </Link>
-                    </Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
+                    </Nav>
+                  </Navbar.Collapse>
+                </Col>
               </Row>
             </Col>
           </Row>

@@ -1,33 +1,45 @@
-//override bs
-:root {
-  --bs-blue: #8be9fd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #ff79c6;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
+// Your variable overrides
+$primary: #bd93f9;
+$danger: #ff5555;
+$secondary: #6272a4;
+$gray-dark: #636364;
+$success: #34b64f;
+$info: #3484b7;
+$warning: #ffb86c;
+$light: #f8f8f2;
+$dark: #282a36;
+$pink: #ff79c6;
 
-  --bs-gray-dark: #282a36;
-  --bs-primary: #bd93f9;
-  --bs-secondary: #6272a4;
-  --bs-success: #34b74f;
-  --bs-info: #8be9fd;
-  --bs-warning: #ffb86c;
-  --bs-danger: #ff5555;
-  --bs-light: #f8f8f2;
-  --bs-dark: #282a36;
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  "secondary": $secondary,
+  "gray-dark": $gray-dark,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "light": $light,
+  "dark": $dark,
+);
+
+.navbar {
+  opacity: 0.97;
+}
+body {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: auto;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-companion-text {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
-
-body {
-  padding-left: 1px;
-  padding-right: 1px;
-}
