@@ -14,6 +14,7 @@ import logo from "../public/logo.png";
 
 import {
   CalendarEvent,
+  Facebook,
   HouseDoor,
   InfoCircle,
   PlayBtn,
@@ -29,8 +30,9 @@ const Layout = ({ children }) => {
         <meta name="description" content="The Journey Church In Dublin GA" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar className="sticky-top" bg="light" expand="lg">
-        <Container fluid="true">
+
+      <Container fluid="true">
+        <Navbar className="sticky-top" bg="light" expand="lg">
           <Row style={{ width: "100%" }}>
             <Col>
               <Navbar.Brand>
@@ -106,9 +108,52 @@ const Layout = ({ children }) => {
               </Row>
             </Col>
           </Row>
-        </Container>
-      </Navbar>
+        </Navbar>
+      </Container>
+
       <Container fluid="true">{children}</Container>
+      <Container className="bg-dark text-secondary" fluid="true">
+        <Row>
+          <Col className="text-center">
+            <address>
+              Find us:
+              <small>
+                <br />
+                1711 Telfair St, Dublin, GA 31021
+                <br />
+                <a href="mailto:journeychurchdublin@gmail.com">
+                  journeychurchdublin@gmail.com
+                </a>
+              </small>
+            </address>
+          </Col>
+          <Col className="text-center">
+            <p>
+              Affilations:
+              <small>
+                <br />
+                <a href="http://www.laurensbaptist-ga.com/">
+                  Laurens Baptist Association
+                </a>
+                <br />
+                <a href="http://gabaptist.org/">Georgia Baptist Convention</a>
+              </small>
+            </p>
+          </Col>
+          <Col className="text-center ">
+            <p>
+              <small>
+                <a href="https://www.facebook.com/TheJourneyChurchDublin/">
+                  <Facebook />
+                </a>
+              </small>
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <small className="text-center">© 2021 The Journey Church </small>
+        </Row>
+      </Container>
     </Fragment>
   );
 };

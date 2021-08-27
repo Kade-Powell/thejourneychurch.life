@@ -6,7 +6,7 @@ $gray-dark: #636364;
 $success: #34b64f;
 $info: #3484b7;
 $warning: #ffb86c;
-$light: #f8f8f2;
+$light: #ffffff;
 $dark: #282a36;
 $pink: #ff79c6;
 
@@ -22,18 +22,28 @@ $theme-colors: (
   "dark": $dark,
 );
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .navbar {
   opacity: 0.97;
 }
-body {
-  padding-left: 2px;
-  padding-right: 2px;
-  margin: auto;
+.row {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .card {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .card-companion-text {
