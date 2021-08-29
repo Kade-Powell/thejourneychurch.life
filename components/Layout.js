@@ -132,8 +132,8 @@ const Layout = ({ children }) => {
                 <br />
                 1711 Telfair St, Dublin, GA 31021
                 <br />
-                <a href="mailto:journeychurchdublin@gmail.com">
-                  journeychurchdublin@gmail.com
+                <a href="mailto:info@thejourneychurch.life">
+                  info@thejourneychurch.life
                 </a>
               </small>
             </address>
