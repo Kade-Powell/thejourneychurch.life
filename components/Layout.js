@@ -32,97 +32,95 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container fluid="true">
-        <Navbar className="sticky-top" bg="light" expand="lg">
-          <Row style={{ width: "100%" }}>
-            <Col>
-              <Navbar.Brand>
-                <Image src={logo} alt="The Journey Church" />
-              </Navbar.Brand>
-            </Col>
-            <Col>{/*for spacing*/}</Col>
+      <Navbar className="sticky-top" bg="light" expand="lg">
+        <Row style={{ width: "100%" }}>
+          <Col>
+            <Navbar.Brand>
+              <Image src={logo} alt="The Journey Church" />
+            </Navbar.Brand>
+          </Col>
+          <Col>{/*for spacing*/}</Col>
 
-            <Col>
-              <Row className="text-end">
-                <Col>
-                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                </Col>
-              </Row>
+          <Col>
+            <Row className="text-end">
+              <Col>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              </Col>
+            </Row>
 
-              <Row>
-                <Col>
-                  <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav>
-                      <Link href="/">
-                        <a
-                          className={
-                            router.pathname == "/"
-                              ? "nav-item nav-link  text-success"
-                              : "nav-item nav-link"
-                          }
-                        >
-                          <HouseDoor />
-                          home
-                        </a>
-                      </Link>
+            <Row>
+              <Col>
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav>
+                    <Link href="/">
+                      <a
+                        className={
+                          router.pathname == "/"
+                            ? "nav-item nav-link  text-success"
+                            : "nav-item nav-link"
+                        }
+                      >
+                        <HouseDoor />
+                        home
+                      </a>
+                    </Link>
 
-                      <Link href="/about" className="nav-item nav-link">
-                        <a
-                          className={
-                            router.pathname == "/about"
-                              ? "nav-item nav-link  text-success"
-                              : "nav-item nav-link"
-                          }
-                        >
-                          <InfoCircle />
-                          about
-                        </a>
-                      </Link>
+                    <Link href="/about" className="nav-item nav-link">
+                      <a
+                        className={
+                          router.pathname == "/about"
+                            ? "nav-item nav-link  text-success"
+                            : "nav-item nav-link"
+                        }
+                      >
+                        <InfoCircle />
+                        about
+                      </a>
+                    </Link>
 
-                      <Link href="/events" className="nav-item nav-link">
-                        <a
-                          className={
-                            router.pathname == "/events"
-                              ? "nav-item nav-link  text-success"
-                              : "nav-item nav-link"
-                          }
-                        >
-                          <CalendarEvent />
-                          events
-                        </a>
-                      </Link>
-                      <Link href="/watch" className="nav-item nav-link">
-                        <a
-                          className={
-                            router.pathname == "/watch"
-                              ? "nav-item nav-link  text-success "
-                              : "nav-item nav-link"
-                          }
-                        >
-                          <PlayBtn />
-                          watch
-                        </a>
-                      </Link>
-                      <Link href="/news" className="nav-item nav-link">
-                        <a
-                          className={
-                            router.pathname == "/news"
-                              ? "nav-item nav-link  text-success "
-                              : "nav-item nav-link"
-                          }
-                        >
-                          <Newspaper />
-                          news
-                        </a>
-                      </Link>
-                    </Nav>
-                  </Navbar.Collapse>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Navbar>
-      </Container>
+                    <Link href="/events" className="nav-item nav-link">
+                      <a
+                        className={
+                          router.pathname == "/events"
+                            ? "nav-item nav-link  text-success"
+                            : "nav-item nav-link"
+                        }
+                      >
+                        <CalendarEvent />
+                        events
+                      </a>
+                    </Link>
+                    <Link href="/watch" className="nav-item nav-link">
+                      <a
+                        className={
+                          router.pathname == "/watch"
+                            ? "nav-item nav-link  text-success "
+                            : "nav-item nav-link"
+                        }
+                      >
+                        <PlayBtn />
+                        watch
+                      </a>
+                    </Link>
+                    <Link href="/news" className="nav-item nav-link">
+                      <a
+                        className={
+                          router.pathname == "/news"
+                            ? "nav-item nav-link  text-success "
+                            : "nav-item nav-link"
+                        }
+                      >
+                        <Newspaper />
+                        news
+                      </a>
+                    </Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Navbar>
 
       <Container fluid="true">{children}</Container>
       <Container className="bg-dark text-secondary" fluid="true">

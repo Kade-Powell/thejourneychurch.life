@@ -32,7 +32,10 @@ body {
 }
 
 .navbar {
-  opacity: 0.97;
+  opacity: 0.98;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 .row {
   margin-left: 2rem;

@@ -25,7 +25,7 @@ export default function Home() {
     <>
       <Row>
         <Col>
-          <Carousel>
+          <Carousel className="bg-dark">
             <Carousel.Item interval={1700}>
               <Image
                 className="d-block w-100"
@@ -129,7 +129,7 @@ export default function Home() {
           </Link>
         </Col>
       </Row>
-      <Row className="bg-info">
+      <Row className="bg-secondary">
         <Col xs={12} lg={6}>
           <Card>
             <Card.Header>
@@ -150,13 +150,14 @@ export default function Home() {
           </Card>
         </Col>
         <Col xs={12} lg={6}>
-          <p className="card-companion-text">
+          <p className="card-companion-text text-light">
             Our church building is located 1711 Telfair St. (HWY 441) Dublin,
             GA. The building is located between Radney Chiropractic and Gay Wood
             Co.
+            <br />
+            <br />
+            We look forward to seeing you!
           </p>
-
-          <p>We look forward to seeing you!</p>
         </Col>
       </Row>
       <Row>
