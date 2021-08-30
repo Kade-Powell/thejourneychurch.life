@@ -1,6 +1,6 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Newspaper } from "react-bootstrap-icons";
+import { Gift } from "react-bootstrap-icons";
 
 export default function Give() {
   return (
@@ -9,15 +9,12 @@ export default function Give() {
         <Row>
           <Col className="text-center text-light bg-success mt-2">
             <h1>
-              News and Announcments <Newspaper />
+              How to Give <Gift />
             </h1>
           </Col>
         </Row>
         <Row>
-          <Col>
-            Need to build this page using on contentful so anyone can add posts
-            here if they want
-          </Col>
+          <Col>Coming Soon,</Col>
         </Row>
       </>
     </>

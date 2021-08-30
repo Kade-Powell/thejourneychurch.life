@@ -1,6 +1,6 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Calendar, Calendar2Check } from "react-bootstrap-icons";
+import { Calendar2Check } from "react-bootstrap-icons";
 
 export default function Events() {
   return (

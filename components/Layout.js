@@ -11,6 +11,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 import logo from "../public/logo.png";
+import pbits from "../public/pbits.png";
 
 import {
   CalendarEvent,
@@ -20,6 +21,7 @@ import {
   Instagram,
   Newspaper,
   PlayBtn,
+  Gift,
 } from "react-bootstrap-icons";
 
 const Layout = ({ children }) => {
@@ -33,7 +35,7 @@ const Layout = ({ children }) => {
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/jc.ico" />
       </Head>
 
       <Navbar className="sticky-top container-fluid" bg="light" expand="lg">
@@ -47,10 +49,10 @@ const Layout = ({ children }) => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Link href="/">
+            <Link href="/" passHref>
               <a
                 className={
-                  router.pathname == "/"
+                  router.pathname === "/"
                     ? "nav-item nav-link  text-success"
                     : "nav-item nav-link"
                 }
@@ -60,10 +62,10 @@ const Layout = ({ children }) => {
               </a>
             </Link>
 
-            <Link href="/about" className="nav-item nav-link">
+            <Link href="/about" className="nav-item nav-link" passHref>
               <a
                 className={
-                  router.pathname == "/about"
+                  router.pathname === "/about"
                     ? "nav-item nav-link  text-success"
                     : "nav-item nav-link"
                 }
@@ -73,10 +75,10 @@ const Layout = ({ children }) => {
               </a>
             </Link>
 
-            <Link href="/events" className="nav-item nav-link">
+            <Link href="/events" className="nav-item nav-link" passHref>
               <a
                 className={
-                  router.pathname == "/events"
+                  router.pathname === "/events"
                     ? "nav-item nav-link  text-success"
                     : "nav-item nav-link"
                 }
@@ -85,10 +87,10 @@ const Layout = ({ children }) => {
                 events
               </a>
             </Link>
-            <Link href="/watch" className="nav-item nav-link">
+            <Link href="/watch" className="nav-item nav-link" passHref>
               <a
                 className={
-                  router.pathname == "/watch"
+                  router.pathname === "/watch"
                     ? "nav-item nav-link  text-success "
                     : "nav-item nav-link"
                 }
@@ -97,16 +99,28 @@ const Layout = ({ children }) => {
                 watch
               </a>
             </Link>
-            <Link href="/news" className="nav-item nav-link">
+            <Link href="/news" className="nav-item nav-link" passHref>
               <a
                 className={
-                  router.pathname == "/news"
+                  router.pathname === "/news"
                     ? "nav-item nav-link  text-success "
                     : "nav-item nav-link"
                 }
               >
                 <Newspaper />
                 news
+              </a>
+            </Link>
+            <Link href="/give" className="nav-item nav-link" passHref>
+              <a
+                className={
+                  router.pathname === "/give"
+                    ? "nav-item nav-link  text-success "
+                    : "nav-item nav-link"
+                }
+              >
+                <Gift />
+                give
               </a>
             </Link>
           </Nav>
@@ -158,8 +172,15 @@ const Layout = ({ children }) => {
           </Col>
         </Row>
         <Row className="overflow-hidden">
-          <Col className="text-end">
+          <Col className="text-start">
             <small>© 2021 The Journey Church </small>
+          </Col>
+          <Col>
+            <div style={{ width: "75px" }} className="float-end">
+              <a href="https://www.pbits.online">
+                <Image src={pbits} alt="PBITS" />
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>
