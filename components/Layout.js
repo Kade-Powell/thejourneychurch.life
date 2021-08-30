@@ -17,6 +17,7 @@ import {
   Facebook,
   HouseDoor,
   InfoCircle,
+  Instagram,
   Newspaper,
   PlayBtn,
 } from "react-bootstrap-icons";
@@ -153,11 +154,18 @@ const Layout = ({ children }) => {
           </Col>
           <Col className="text-center ">
             <p>
-              <small>
+              Social Media:
+              <br />
+              <Col className="small">
                 <a href="https://www.facebook.com/TheJourneyChurchDublin/">
                   <Facebook />
                 </a>
-              </small>
+              </Col>
+              <Col className="small">
+                <a href="https://www.instagram.com/thejourneychurchdublin/?hl=en">
+                  <Instagram />
+                </a>
+              </Col>
             </p>
           </Col>
         </Row>
