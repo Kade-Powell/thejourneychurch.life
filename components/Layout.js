@@ -30,101 +30,93 @@ const Layout = ({ children }) => {
       <Head>
         <title>The Journey Church</title>
         <meta name="description" content="The Journey Church In Dublin GA" />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar className="sticky-top" bg="light" expand="lg">
-        <Row style={{ width: "100%" }}>
-          <Col>
-            <Navbar.Brand>
-              <Image src={logo} alt="The Journey Church" />
-            </Navbar.Brand>
-          </Col>
-          <Col>{/*for spacing*/}</Col>
+      <Navbar className="sticky-top container-fluid" bg="light" expand="lg">
+        <Navbar.Brand style={{ width: "30vw" }}>
+          <Image src={logo} alt="The Journey Church" />
+        </Navbar.Brand>
+        <Navbar.Toggle
+          className="navbar-toggler-right"
+          aria-controls="basic-navbar-nav"
+        />
 
-          <Col>
-            <Row className="text-end">
-              <Col>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              </Col>
-            </Row>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav>
+            <Link href="/">
+              <a
+                className={
+                  router.pathname == "/"
+                    ? "nav-item nav-link  text-success"
+                    : "nav-item nav-link"
+                }
+              >
+                <HouseDoor />
+                home
+              </a>
+            </Link>
 
-            <Row>
-              <Col>
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav>
-                    <Link href="/">
-                      <a
-                        className={
-                          router.pathname == "/"
-                            ? "nav-item nav-link  text-success"
-                            : "nav-item nav-link"
-                        }
-                      >
-                        <HouseDoor />
-                        home
-                      </a>
-                    </Link>
+            <Link href="/about" className="nav-item nav-link">
+              <a
+                className={
+                  router.pathname == "/about"
+                    ? "nav-item nav-link  text-success"
+                    : "nav-item nav-link"
+                }
+              >
+                <InfoCircle />
+                about
+              </a>
+            </Link>
 
-                    <Link href="/about" className="nav-item nav-link">
-                      <a
-                        className={
-                          router.pathname == "/about"
-                            ? "nav-item nav-link  text-success"
-                            : "nav-item nav-link"
-                        }
-                      >
-                        <InfoCircle />
-                        about
-                      </a>
-                    </Link>
-
-                    <Link href="/events" className="nav-item nav-link">
-                      <a
-                        className={
-                          router.pathname == "/events"
-                            ? "nav-item nav-link  text-success"
-                            : "nav-item nav-link"
-                        }
-                      >
-                        <CalendarEvent />
-                        events
-                      </a>
-                    </Link>
-                    <Link href="/watch" className="nav-item nav-link">
-                      <a
-                        className={
-                          router.pathname == "/watch"
-                            ? "nav-item nav-link  text-success "
-                            : "nav-item nav-link"
-                        }
-                      >
-                        <PlayBtn />
-                        watch
-                      </a>
-                    </Link>
-                    <Link href="/news" className="nav-item nav-link">
-                      <a
-                        className={
-                          router.pathname == "/news"
-                            ? "nav-item nav-link  text-success "
-                            : "nav-item nav-link"
-                        }
-                      >
-                        <Newspaper />
-                        news
-                      </a>
-                    </Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+            <Link href="/events" className="nav-item nav-link">
+              <a
+                className={
+                  router.pathname == "/events"
+                    ? "nav-item nav-link  text-success"
+                    : "nav-item nav-link"
+                }
+              >
+                <CalendarEvent />
+                events
+              </a>
+            </Link>
+            <Link href="/watch" className="nav-item nav-link">
+              <a
+                className={
+                  router.pathname == "/watch"
+                    ? "nav-item nav-link  text-success "
+                    : "nav-item nav-link"
+                }
+              >
+                <PlayBtn />
+                watch
+              </a>
+            </Link>
+            <Link href="/news" className="nav-item nav-link">
+              <a
+                className={
+                  router.pathname == "/news"
+                    ? "nav-item nav-link  text-success "
+                    : "nav-item nav-link"
+                }
+              >
+                <Newspaper />
+                news
+              </a>
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
-
-      <Container fluid="true">{children}</Container>
-      <Container className="bg-dark text-secondary" fluid="true">
+      <Container>{children}</Container>
+      <Container
+        className="bg-dark text-secondary overflow-hidden"
+        fluid="true"
+      >
         <Row>
           <Col className="text-center">
             <address>
@@ -140,37 +132,35 @@ const Layout = ({ children }) => {
             </address>
           </Col>
           <Col className="text-center">
-            <p>
-              Affilations:
-              <small>
-                <br />
-                <a href="http://www.laurensbaptist-ga.com/">
-                  Laurens Baptist Association
-                </a>
-                <br />
-                <a href="http://gabaptist.org/">Georgia Baptist Convention</a>
-              </small>
-            </p>
+            Affilations:
+            <small>
+              <br />
+              <a href="http://www.laurensbaptist-ga.com/">
+                Laurens Baptist Association
+              </a>
+              <br />
+              <a href="http://gabaptist.org/">Georgia Baptist Convention</a>
+            </small>
           </Col>
           <Col className="text-center ">
-            <p>
-              Social Media:
-              <br />
-              <Col className="small">
-                <a href="https://www.facebook.com/TheJourneyChurchDublin/">
-                  <Facebook />
-                </a>
-              </Col>
-              <Col className="small">
-                <a href="https://www.instagram.com/thejourneychurchdublin/?hl=en">
-                  <Instagram />
-                </a>
-              </Col>
-            </p>
+            Social Media:
+            <br />
+            <Col className="small">
+              <a href="https://www.facebook.com/TheJourneyChurchDublin/">
+                <Facebook />
+              </a>
+            </Col>
+            <Col className="small">
+              <a href="https://www.instagram.com/thejourneychurchdublin/?hl=en">
+                <Instagram />
+              </a>
+            </Col>
           </Col>
         </Row>
-        <Row>
-          <small className="text-center">© 2021 The Journey Church </small>
+        <Row className="overflow-hidden">
+          <Col className="text-end">
+            <small>© 2021 The Journey Church </small>
+          </Col>
         </Row>
       </Container>
     </Fragment>

@@ -59,7 +59,7 @@ export default function Home() {
         </Col>
       </Row>
       <Row>
-        <Col xs={12} lg={4}>
+        <Col xs={12} xl={4}>
           <Card>
             <Card.Header>
               <h3 className="text-center">
@@ -79,7 +79,7 @@ export default function Home() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} lg={4}>
+        <Col xs={12} xl={4}>
           <Card>
             <Card.Header>
               <h3 className="text-center">
@@ -100,7 +100,7 @@ export default function Home() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} lg={4}>
+        <Col xs={12} xl={4}>
           <Card>
             <Card.Header>
               <h3 className="text-center">
@@ -123,14 +123,14 @@ export default function Home() {
       <Row>
         <Col className="mb-2">
           <Link href="/about">
-            <Button variant="outline-success" className="float-end">
+            <Button variant="outline-info" className="float-end">
               Learn More About Us
             </Button>
           </Link>
         </Col>
       </Row>
       <Row className="bg-secondary">
-        <Col xs={12} lg={6}>
+        <Col xs={12} xl={6}>
           <Card>
             <Card.Header>
               <h3 className="text-center">
@@ -149,7 +149,7 @@ export default function Home() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} lg={6}>
+        <Col xs={12} xl={6}>
           <p className="card-companion-text text-light">
             Our church building is located 1711 Telfair St. (HWY 441) Dublin,
             GA. The building is located between Radney Chiropractic and Gay Wood
@@ -166,7 +166,7 @@ export default function Home() {
         </Col>
       </Row>
       <Row>
-        <Col xs={12} lg={4}>
+        <Col xs={12} xl={4}>
           <Card>
             <Card.Header>
               <h3 className="text-center">
@@ -183,7 +183,7 @@ export default function Home() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} lg={4}>
+        <Col xs={12} xl={4}>
           <Card>
             <Card.Header>
               <h3 className="text-center">
@@ -199,7 +199,7 @@ export default function Home() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} lg={4}>
+        <Col xs={12} xl={4}>
           <Card>
             <Card.Header>
               <h3 className="text-center">
