@@ -50,9 +50,9 @@ export default function About() {
                   <br />
                   <li>
                     The priorities of the ministry of this church flow from the
-                    vision of God's glory revealed in Jesus Christ. We exist to
-                    savor this vision in worship <i>(John 4:23)</i>, strengthen
-                    the vision in nurture
+                    vision of God&#39s glory revealed in Jesus Christ. We exist
+                    to savor this vision in worship <i>(John 4:23)</i>,
+                    strengthen the vision in nurture
                     <i>(1 Corinthians 14:26; 2 Peter 3:18)</i>, and spread the
                     vision in discipleship, evangelism, missions, and loving
                     deeds
