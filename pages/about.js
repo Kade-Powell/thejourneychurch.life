@@ -35,47 +35,43 @@ export default function About() {
               </h4>
             </Card.Header>
             <Card.Body>
-              <Card.Text>
-                <ul>
-                  <li>
-                    The foundation of this church is the Lord Jesus Christ
-                    <i>(1 Corinthians 3:11; Ephesians 2:20)</i>, and He guides
-                    His church in all affairs through the Holy Scriptures
-                    <i>(Psalms 119; 2 Timothy 3:15-17)</i>. Therefore, the
-                    purpose of this church is to be Bible-centered,
-                    Disciple-making and to glorify God through Jesus Christ, in
-                    the power of the Holy Spirit
-                    <i>( Isaiah 43:7; Ephesians 1:6, 12, 14)</i>.
-                  </li>
-                  <br />
-                  <li>
-                    The priorities of the ministry of this church flow from the
-                    vision of God&#39s glory revealed in Jesus Christ. We exist
-                    to savor this vision in worship <i>(John 4:23)</i>,
-                    strengthen the vision in nurture
-                    <i>(1 Corinthians 14:26; 2 Peter 3:18)</i>, and spread the
-                    vision in discipleship, evangelism, missions, and loving
-                    deeds
-                    <i>(Matthew 5:16; 28:18-20; 1 Peter 2:9; 3:15)</i>.
-                  </li>
-                  <br />
-                  <li>
-                    In order to remain true to our Lord and His word, this
-                    church must be marked by preaching the whole counsel of God
-                    <i>(Acts 20:27; 2 Timothy 4:1-2)</i>, administering baptism
-                    <i>(Matthew 28:19; Romans 6:1-4)</i> and the Lord’s Supper
-                    <i>(Luke 22:19; 1 Corinthians 11:17-34)</i>, loving one
-                    another
-                    <i>(John 13:34-35; 1 John 3:11-24; 4:7-12)</i>, making
-                    disciples <i>(Matthew 28:18-20)</i>, and practicing
-                    formative
-                    <i>(1 Thessalonians 5:14; 1 Timothy 5:1-2; Titus 2:15)</i>
-                    and corrective discipline
-                    <i>(Matthew 18:15-20; 1 Corinthians 5:1-5)</i>.
-                  </li>
-                  <br />
-                </ul>
-              </Card.Text>
+              <ul>
+                <li>
+                  The foundation of this church is the Lord Jesus Christ
+                  <i>(1 Corinthians 3:11; Ephesians 2:20)</i>, and He guides His
+                  church in all affairs through the Holy Scriptures
+                  <i>(Psalms 119; 2 Timothy 3:15-17)</i>. Therefore, the purpose
+                  of this church is to be Bible-centered, Disciple-making and to
+                  glorify God through Jesus Christ, in the power of the Holy
+                  Spirit
+                  <i>( Isaiah 43:7; Ephesians 1:6, 12, 14)</i>.
+                </li>
+                <br />
+                <li>
+                  The priorities of the ministry of this church flow from the
+                  vision of God&#39s glory revealed in Jesus Christ. We exist to
+                  savor this vision in worship <i>(John 4:23)</i>, strengthen
+                  the vision in nurture
+                  <i>(1 Corinthians 14:26; 2 Peter 3:18)</i>, and spread the
+                  vision in discipleship, evangelism, missions, and loving deeds
+                  <i>(Matthew 5:16; 28:18-20; 1 Peter 2:9; 3:15)</i>.
+                </li>
+                <br />
+                <li>
+                  In order to remain true to our Lord and His word, this church
+                  must be marked by preaching the whole counsel of God
+                  <i>(Acts 20:27; 2 Timothy 4:1-2)</i>, administering baptism
+                  <i>(Matthew 28:19; Romans 6:1-4)</i> and the Lord’s Supper
+                  <i>(Luke 22:19; 1 Corinthians 11:17-34)</i>, loving one
+                  another
+                  <i>(John 13:34-35; 1 John 3:11-24; 4:7-12)</i>, making
+                  disciples <i>(Matthew 28:18-20)</i>, and practicing formative
+                  <i>(1 Thessalonians 5:14; 1 Timothy 5:1-2; Titus 2:15)</i>
+                  and corrective discipline
+                  <i>(Matthew 18:15-20; 1 Corinthians 5:1-5)</i>.
+                </li>
+                <br />
+              </ul>
             </Card.Body>
           </Card>
         </Col>

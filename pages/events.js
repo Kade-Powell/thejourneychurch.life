@@ -24,6 +24,19 @@ export default function Events() {
           ></iframe>
         </Col>
       </Row>
+      <Row>
+        <Col className="text-center">
+          <h5>Small groups meet every Sunday night.</h5>
+          <p>
+            Small groups do not have a set time to meet, your small group leader
+            can tell you what time and where to meet.
+          </p>
+          <p>
+            If you are not in a small group but would like to be send us an{" "}
+            <a href="mailto:info@thejourneychurch.life">email!</a>
+          </p>
+        </Col>
+      </Row>
     </>
   );
 }

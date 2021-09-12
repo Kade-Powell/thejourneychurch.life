@@ -13,7 +13,7 @@ export default function Sermons() {
         </Col>
       </Row>
       <Row>
-        <Col>Need to build this page based on the content from rumble API</Col>
+        <Col>Coming Soon!</Col>
       </Row>
     </>
   );

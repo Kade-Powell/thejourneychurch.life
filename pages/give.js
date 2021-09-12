@@ -14,7 +14,7 @@ export default function Give() {
           </Col>
         </Row>
         <Row>
-          <Col>Coming Soon,</Col>
+          <Col>Coming Soon</Col>
         </Row>
       </>
     </>
