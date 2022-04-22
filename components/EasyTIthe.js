@@ -1,13 +1,13 @@
 import Script from "next/script";
-import Head from "next/head";
+import Col from "react-bootstrap/Col";
 
 export const EasyTIthe = () => {
   return (
-    <Head>
+    <Col>
       <Script
-        src="https://forms.ministryforms.net/embed.aspx?formId=612566d4-e253-4641-bfc4-1e370b04e42f"
-        strategy="beforeInteractive"
+        src="https://forms.ministryforms.net/embed.aspx?formId=0ec43da8-2b21-4484-85c1-df51c398d075"
+        strategy="BeforePageInteractive"
       />
-    </Head>
+    </Col>
   );
 };

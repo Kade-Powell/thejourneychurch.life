@@ -14,9 +14,7 @@ export default function Give() {
         </Col>
       </Row>
       <Row>
-        <Col>
-          <EasyTIthe />
-        </Col>
+        <EasyTIthe />
       </Row>
     </>
   );
