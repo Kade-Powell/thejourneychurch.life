@@ -1,7 +1,7 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Gift } from "react-bootstrap-icons";
-import Script from "next/script";
+import { EasyTIthe } from "../components/EasyTIthe";
 
 export default function Give() {
   return (
@@ -15,10 +15,7 @@ export default function Give() {
       </Row>
       <Row>
         <Col>
-          <Script
-            src="https://forms.ministryforms.net/embed.aspx?formId=612566d4-e253-4641-bfc4-1e370b04e42f"
-            strategy="beforeInteractive"
-          />
+          <EasyTIthe />
         </Col>
       </Row>
     </>
