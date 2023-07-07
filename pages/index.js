@@ -6,7 +6,6 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 import firstSlide from "../public/firstSlide.png";
-import secondSlide from "../public/secondSlide.png";
 import thirdSlide from "../public/thirdSlide.png";
 
 import Carousel from "react-bootstrap/Carousel";
@@ -34,14 +33,7 @@ export default function Home() {
                 layout="responsive"
               />
             </Carousel.Item>
-            <Carousel.Item interval={1700}>
-              <Image
-                className="d-block w-100"
-                src={secondSlide}
-                alt="Second slide"
-                layout="responsive"
-              />
-            </Carousel.Item>
+            
             <Carousel.Item interval={1700}>
               <Image
                 className="d-block w-100"
